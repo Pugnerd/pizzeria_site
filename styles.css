@@ -94,6 +94,12 @@ a {
   display: inline-block;
 }
 
+@media screen and (min-width: 200px) {
+  #main {
+    width: 100vw;
+  }
+}
+
 #main section {
   width: 100vw;
   margin-bottom: 10px;
@@ -121,17 +127,33 @@ body.clicked #main section {
 
 #main h2 {
   font-family: 'Lobster', cursive;
-  font-size: 6vw;
+  font-size: 80px;
   color: #5a011f;
   position: absolute;
   top: 20px;
   left: 60px;
 }
 
+@media screen and (min-width: 200px) and (max-width: 700px) {
+  #main h2 {
+    font-size: 50px;
+    left: 20px;
+  }
+}
+
 #main .title-bg {
+  min-width: 300px;
   width: 100vw;
   height: 90vh;
   opacity: 0.9;
+}
+
+@media screen and (min-width: 200px) and (max-width: 700px) {
+  #main .title-bg {
+    width: 100vw;
+    height: 40vh;
+    opacity: 0.5;
+  }
 }
 
 #main .introduction {
@@ -185,6 +207,14 @@ div#open {
 @media screen and (min-width: 60em) {
   div#open {
     display: none;
+  }
+}
+
+@media screen and (min-width: 200px) and (max-width: 700px) {
+  div#open {
+    height: 10vw;
+    width: 10vw;
+    margin: 20px;
   }
 }
 
